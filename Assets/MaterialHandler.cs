@@ -10,12 +10,14 @@ public class MaterialHandler : MonoBehaviour
 
     public void EnableButton()
     {
-        print("I'm enabled");
+        print("Enable the button");
+        materialButton.SetActive(true);
     }
 
     public void DisableButton()
     {
-        print("I'm disabled");
+        print("Disable the button");
+        materialButton.SetActive(false);
     }
 
 }

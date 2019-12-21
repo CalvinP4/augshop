@@ -7,7 +7,7 @@ public class DragObject1 : MonoBehaviour
     private Vector3 dist;
     private float posX;
     private float posY;
-
+    [SerializeField] GameObject materialButton;
 
     void OnMouseDown()
     {
@@ -15,25 +15,18 @@ public class DragObject1 : MonoBehaviour
         posX = Input.mousePosition.x - dist.x;
         posY = Input.mousePosition.y - dist.y;
 
-        MaterialHandler materialHandler = new MaterialHandler();
-        materialHandler.EnableButton();
-        materialHandler.DisableButton();
-        // todo show color edit button for 10s
-        // todo if button pressed pass reference of gameObject and open Scene
-        
+
+        //materialHandler.EnableButton();  
+        materialButton.SetActive(true);
     }
 
-
-    void ShowButton()
+    void OnMouseExit()
     {
-
+        //materialHandler.DisableButton();
+        //materialHandler.DisableButton();
+        materialButton.SetActive(false);
     }
 
-
-    void HideButton()
-    {
-
-    }
 
     void OnMouseDrag()
     {
