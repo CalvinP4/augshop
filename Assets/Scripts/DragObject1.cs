@@ -8,11 +8,30 @@ public class DragObject1 : MonoBehaviour
     private float posX;
     private float posY;
 
+
     void OnMouseDown()
     {
         dist = Camera.main.WorldToScreenPoint(transform.position);
         posX = Input.mousePosition.x - dist.x;
         posY = Input.mousePosition.y - dist.y;
+
+        MaterialHandler materialHandler = new MaterialHandler();
+        materialHandler.EnableButton();
+        materialHandler.DisableButton();
+        // todo show color edit button for 10s
+        // todo if button pressed pass reference of gameObject and open Scene
+        
+    }
+
+
+    void ShowButton()
+    {
+
+    }
+
+
+    void HideButton()
+    {
 
     }
 

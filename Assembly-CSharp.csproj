@@ -53,12 +53,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Button1.cs" />
-     <Compile Include="Assets\CSharpscaling.cs" />
-     <Compile Include="Assets\DragObject1.cs" />
-     <Compile Include="Assets\Experiment.cs" />
-     <Compile Include="Assets\FurnitureHandler.cs" />
-     <Compile Include="Assets\FurnitureSelection.cs" />
      <Compile Include="Assets\LeanTouch\Examples\Scripts\LeanCameraMove.cs" />
      <Compile Include="Assets\LeanTouch\Examples\Scripts\LeanCameraMoveSmooth.cs" />
      <Compile Include="Assets\LeanTouch\Examples\Scripts\LeanCameraZoom.cs" />
@@ -102,9 +96,14 @@
      <Compile Include="Assets\LeanTouch\Scripts\LeanSelectable.cs" />
      <Compile Include="Assets\LeanTouch\Scripts\LeanSnapshot.cs" />
      <Compile Include="Assets\LeanTouch\Scripts\LeanTouch.cs" />
+     <Compile Include="Assets\MaterialHandler.cs" />
      <Compile Include="Assets\Rotate.cs" />
-     <Compile Include="Assets\Spawner.cs" />
-     <Compile Include="Assets\onClickForScaling.cs" />
+     <Compile Include="Assets\Scripts\CSharpscaling.cs" />
+     <Compile Include="Assets\Scripts\DragObject1.cs" />
+     <Compile Include="Assets\Scripts\Experiment.cs" />
+     <Compile Include="Assets\Scripts\FurnitureSelection.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\onClickForScaling.cs" />
      <None Include="Assets\LeanTouch\Examples\Fonts\OFL.txt" />
      <None Include="Assets\LeanTouch\Examples\Shaders\Smooth.shader" />
      <None Include="Assets\LeanTouch\Examples\Shaders\Skybox.shader" />
