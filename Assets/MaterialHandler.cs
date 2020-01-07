@@ -6,18 +6,11 @@ using UnityEngine.UIElements;
 
 public class MaterialHandler : MonoBehaviour
 {
-    [SerializeField]GameObject materialButton;
+    public Button materialButton;
 
-    public void EnableButton()
+    public static void getButton()
     {
-        print("Enable the button");
-        materialButton.SetActive(true);
-    }
 
-    public void DisableButton()
-    {
-        print("Disable the button");
-        materialButton.SetActive(false);
     }
 
 }
