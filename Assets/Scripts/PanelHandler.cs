@@ -5,14 +5,12 @@ using UnityEngine;
 public class PanelHandler : MonoBehaviour
 {
     [SerializeField] GameObject panel;  //the reference of the panel
-    
+    public static Transform selectedBlock;
+
     public void SetPanelVisible()
     {
         if (panel != null)
             panel.SetActive(true);
-
-        //anchor the panel so it gets displayed properly
-
     }
 
     public void SetPanelInvisible()
@@ -20,4 +18,20 @@ public class PanelHandler : MonoBehaviour
         if (panel != null)
             panel.SetActive(false);
     }
+
+    public void SetColorRed()
+    {
+        selectedBlock.GetComponent<Renderer>().material.color = Color.red;
+    }
+
+    public void SetColorGreen()
+    {
+        selectedBlock.GetComponent<Renderer>().material.color = Color.green;
+    }
+
+    public void SetColorBlue()
+    {
+        selectedBlock.GetComponent<Renderer>().material.color = Color.blue;
+    }
+
 }

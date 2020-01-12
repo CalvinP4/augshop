@@ -8,9 +8,12 @@ public class DragObject1 : MonoBehaviour
     private Vector3 dist;
     private float posX;
     private float posY;
+    //private Transform selectedBlock;
+
     public GameObject gameObject;
     public Button matButton;
     public PanelHandler panelHandler;
+    
 
     void Start()
     {
@@ -54,6 +57,9 @@ public class DragObject1 : MonoBehaviour
         dist = Camera.main.WorldToScreenPoint(transform.position);
         posX = Input.mousePosition.x - dist.x;
         posY = Input.mousePosition.y - dist.y;
+
+        //selectedBlock = transform;
+        PanelHandler.selectedBlock = transform;
     }
 
     void OnMouseDrag()
@@ -64,4 +70,7 @@ public class DragObject1 : MonoBehaviour
         Vector3 worldPos = Camera.main.ScreenToWorldPoint(curPos);
         transform.position = worldPos;
     }
+
+
+         
 }
