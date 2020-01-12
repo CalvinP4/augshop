@@ -32,10 +32,8 @@ public class Spawner : MonoBehaviour
         
         if(i < furnModels.Length)
         {
-            furnModels[i] = Instantiate(prefab, gameObject.transform);
-            //furnModels[i] = new GameObject("Cube");        Spawns empty object
+            furnModels[i] = Instantiate(prefab, gameObject.transform);          
             furnModels[i].transform.SetParent(gameObject.transform);
-            //furnModels[i].name = "Cube " + i;
             i += 1;
         }
         

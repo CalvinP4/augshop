@@ -96,12 +96,13 @@
      <Compile Include="Assets\LeanTouch\Scripts\LeanSelectable.cs" />
      <Compile Include="Assets\LeanTouch\Scripts\LeanSnapshot.cs" />
      <Compile Include="Assets\LeanTouch\Scripts\LeanTouch.cs" />
-     <Compile Include="Assets\MaterialHandler.cs" />
-     <Compile Include="Assets\Rotate.cs" />
      <Compile Include="Assets\Scripts\CSharpscaling.cs" />
      <Compile Include="Assets\Scripts\DragObject1.cs" />
      <Compile Include="Assets\Scripts\Experiment.cs" />
      <Compile Include="Assets\Scripts\FurnitureSelection.cs" />
+     <Compile Include="Assets\Scripts\MaterialHandler.cs" />
+     <Compile Include="Assets\Scripts\PanelHandler.cs" />
+     <Compile Include="Assets\Scripts\Rotate.cs" />
      <Compile Include="Assets\Scripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\onClickForScaling.cs" />
      <None Include="Assets\LeanTouch\Examples\Fonts\OFL.txt" />
