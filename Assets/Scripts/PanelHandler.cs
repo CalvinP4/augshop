@@ -1,11 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PanelHandler : MonoBehaviour
 {
     [SerializeField] GameObject panel;  //the reference of the panel
     public static Transform selectedBlock;
+    public Slider rotationSlider;
+
+    
+    
 
     public void SetPanelVisible()
     {
@@ -34,4 +39,9 @@ public class PanelHandler : MonoBehaviour
         selectedBlock.GetComponent<Renderer>().material.color = Color.blue;
     }
 
+    public void RotateMyObject()
+    {
+        float sliderValue = rotationSlider.value;
+        selectedBlock.localRotation = Quaternion.Euler( 0f, sliderValue * 360f ,0f);
+    }
 }

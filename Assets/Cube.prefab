@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7637450882965061946}
   - component: {fileID: -628855408701160376}
   - component: {fileID: 6745239349300220701}
+  - component: {fileID: 5283169656469636001}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -117,5 +118,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 084322a3b0826974b834593246ce08e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObject: {fileID: 0}
+  matButton: {fileID: 0}
+  panelHandler: {fileID: 0}
+--- !u!114 &5283169656469636001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7637450882965061951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f950762afeacf7b4daa305b82a6491f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
