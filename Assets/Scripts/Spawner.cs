@@ -5,16 +5,15 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     public GameObject prefab;
+    public GameObject chair;
     //public Transform spawnpoint;
     private GameObject[] furnModels;
-    private List<GameObject> furnList;
     private int i = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        furnModels = new GameObject[3];
-        furnList = new List<GameObject>();
+        furnModels = new GameObject[6];
     }
 
     public void SpawnCube()
@@ -51,6 +50,17 @@ public class Spawner : MonoBehaviour
             Debug.Log(furnModels[0] == furnModels[1]);
         }
         */
+    }
+
+
+    public void SpawnChair()
+    {
+        if (i < furnModels.Length)
+        {
+            furnModels[i] = Instantiate(chair, gameObject.transform);
+            furnModels[i].transform.SetParent(gameObject.transform);
+            i += 1;
+        }
     }
 
     // Update is called once per frame
